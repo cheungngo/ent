@@ -1,4 +1,6 @@
-# Ent\\[2mm] A Usable Quantum Programming Language\\ on Top of the Enter Calculus\\[4mm] Language Specification, Reference Implementation, and Debug Log
+# Ent: A Usable Quantum Programming Language on Top of the Enter Calculus
+
+## Language Specification, Reference Implementation, and Debug Log
 
 > Reconstructed automatically from **085XvA.tex** by
 > *TeX → Repo* on 2026-07-27T02:24:06.523Z.
