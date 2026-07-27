@@ -1,0 +1,7 @@
+$ entc verify examples/teleport.ent
+scheduler independence (Thm 4.5): max dTV = 0.00e+00
+preservation/progress/normalization (Thms 3.3-3.5): asserted per step
+
+$ entc run examples/teleport.ent --exact
+00  0.333333
+11  0.666667

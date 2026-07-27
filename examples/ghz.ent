@@ -1,0 +1,6 @@
+fn main() -> Bit[4] {
+    let qs = qubits(4);
+    H qs[0];
+    for i in 1..4 { CX qs[0], qs[i]; }
+    measure qs
+}

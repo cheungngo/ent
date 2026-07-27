@@ -1,0 +1,19 @@
+fn teleport(msg: Qubit) -> Qubit {
+    let (a, b) = bell();
+    CX msg, a;
+    H  msg;
+    let m1 = measure msg;
+    let m2 = measure a;
+    if m2 { X b; }            // else-branch is the identity on b
+    if m1 { Z b; }
+    b
+}
+
+fn main() -> (Bit, Bit) {
+    let q = qubit();
+    RY[2.0 * atan(sqrt(2.0))] q;      // |ψ⟩ = √(1/3)|0⟩ + √(2/3)|1⟩
+    let t = teleport(q);
+    let r = measure t;
+    let (r0, r1) = copy r;            // classical duplication is definable
+    (r0, r1)
+}

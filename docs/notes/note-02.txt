@@ -1,0 +1,2 @@
+lualatex ent-spec.tex
+lualatex ent-spec.tex        # second pass for the table of contents

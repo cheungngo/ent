@@ -1,0 +1,14 @@
+[project.scripts]
+enter-report = "enter.report:main"
+enter-fuzz   = "enter.fuzz:main"
+entc         = "ent.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# (D27) the standard library ships as package data.
+[tool.setuptools.package-data]
+ent = ["std/*.ent"]

@@ -1,0 +1,12 @@
+fn bell() -> (Qubit, Qubit) {
+    let a = qubit();
+    let b = qubit();
+    H a;
+    CX a, b;
+    (a, b)                    // trailing expression = return value
+}
+
+fn main() -> (Bit, Bit) {
+    let (a, b) = bell();
+    (measure a, measure b)
+}

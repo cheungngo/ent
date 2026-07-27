@@ -1,0 +1,1 @@
+fn qft[n: int](qs: Qubit[n]) -> Qubit[n] { ... }

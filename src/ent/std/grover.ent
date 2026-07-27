@@ -1,0 +1,18 @@
+gate diffuse[n: int](qs: Qubit[n]) {
+    for i in 0..n { H qs[i]; X qs[i]; }
+    ctrl(n - 1) Z qs;
+    for i in 0..n { X qs[i]; H qs[i]; }
+}
+
+fn grover[n: int, marked: int, iters: int]() -> Bit[n] {
+    let qs = qubits(n);
+    for i in 0..n { H qs[i]; }
+    for _k in 0..iters {
+        // phase oracle for the single marked string
+        for i in 0..n { if ((marked >> i) % 2) == 0 { X qs[i]; } }
+        ctrl(n - 1) Z qs;
+        for i in 0..n { if ((marked >> i) % 2) == 0 { X qs[i]; } }
+        diffuse[n] qs;
+    }
+    measure qs
+}

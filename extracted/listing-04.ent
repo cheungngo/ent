@@ -1,0 +1,5 @@
+fn main() -> Bit {
+    let q = qubit();
+    RY[0.7] q;
+    measure q in X            // Thm 13.1: apply U† then Enter
+}

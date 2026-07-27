@@ -1,0 +1,11 @@
+python -m pip install -e ".[dev]"
+
+pytest -q                            # Enter-calculus regression suite
+python -m enter.report               # one-command claim report
+
+entc check   examples/ghz.ent
+entc cost    examples/ghz.ent
+entc verify  examples/teleport.ent
+entc run     examples/teleport.ent --exact
+entc run     examples/ghz.ent --shots 1024 --seed 7 --check
+entc emit    examples/ghz.ent --target qasm3 -o ghz.qasm

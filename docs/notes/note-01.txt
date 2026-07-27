@@ -1,0 +1,34 @@
+error[E0102]: qubit `q` is used twice in one operation
+  --> teleport.ent:9:8
+   |
+ 9 |     CX q, q;
+   |        ^  ^ contraction is not permitted on Q
+   = note: Enter Calculus §1.2 — contexts in separate premises are disjoint
+   = help: allocate a second qubit with `qubit()`
+
+error[E0104]: use of consumed resource `msg`
+  --> teleport.ent:12:7
+   |
+11 |     let m1 = measure msg;
+   |                      --- `msg` consumed here (Enter : Q⊗n -o Bit⊗n)
+12 |     H msg;
+   |       ^^^ used after measurement
+
+error[E0103]: linear resource `anc` is never consumed
+   = note: weakening is not permitted; every qubit must be measured,
+           discarded, or returned
+   = help: add `discard anc;`  (measure-and-ignore, justified by Thm 7.2)
+
+error[E0301]: conditional branches consume different resources
+  --> adaptive.ent:20:5
+   |
+20 |     if b { discard q; } else { X q; }
+   |            ^^^^^^^^^^         ^^^^ `q` survives only in the else-branch
+   = note: §6.1 additive rule — Γ ⊢ b : Bit, ∆ ⊢ u : A, ∆ ⊢ u' : A
+
+error[E0401]: `gate` bodies must be measurement- and allocation-free
+   = note: gate bodies are lowered to unitaries so that `adj` and `ctrl`
+           are definable
+
+error[E0501]: a runtime value was used where a compile-time value is required
+   = note: static positions are array sizes, loop bounds, and `[...]` params

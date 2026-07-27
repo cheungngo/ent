@@ -1,0 +1,9 @@
+gate qft[n: int](qs: Qubit[n]) {
+    for i in 0..n {
+        H qs[i];
+        for j in (i+1)..n {
+            ctrl PHASE[pi / (1 << (j - i))] qs[j], qs[i];
+        }
+    }
+    for i in 0..(n / 2) { SWAP qs[i], qs[n - 1 - i]; }
+}

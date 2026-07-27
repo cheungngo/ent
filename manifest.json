@@ -1,0 +1,780 @@
+{
+  "tool": "tex2repo",
+  "generatedAt": "2026-07-27T02:24:11.677Z",
+  "source": "085XvA.tex",
+  "title": "Ent\\\\[2mm] A Usable Quantum Programming Language\\\\ on Top of the Enter Calculus\\\\[4mm] Language Specification, Reference Implementation, and Debug Log",
+  "rootFolder": "enter-calculus",
+  "wrappedInRoot": true,
+  "layoutTreeDetected": true,
+  "debugIdentifiers": [
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "D9",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15",
+    "D16",
+    "D17",
+    "D18",
+    "D19",
+    "D20",
+    "D21",
+    "D22",
+    "D23",
+    "D24",
+    "D25",
+    "D26",
+    "D27",
+    "D28",
+    "D29",
+    "D30"
+  ],
+  "listings": 32,
+  "files": [
+    {
+      "path": "extracted/listing-01.ent",
+      "include": true,
+      "bytes": 48,
+      "lines": 1,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 1,
+        "texLine": 239,
+        "caption": "",
+        "section": "Two levels: a static meta-language over a linear object-language",
+        "rule": "unnamed listing → unstructured fallback"
+      }
+    },
+    {
+      "path": "extracted/listing-02.ent",
+      "include": true,
+      "bytes": 134,
+      "lines": 2,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 2,
+        "texLine": 252,
+        "caption": "",
+        "section": "Ownership syntax over a functional core",
+        "rule": "unnamed listing → unstructured fallback"
+      }
+    },
+    {
+      "path": "examples/bell.ent",
+      "include": true,
+      "bytes": 255,
+      "lines": 12,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 3,
+        "texLine": 326,
+        "caption": "examples/bell.ent",
+        "section": "Bell pair",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "docs/sessions/session-01.txt",
+      "include": true,
+      "bytes": 55,
+      "lines": 3,
+      "language": "txt",
+      "kind": "session",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 4,
+        "texLine": 341,
+        "caption": "Session (illustrative)",
+        "section": "Bell pair",
+        "rule": "unnamed shell session"
+      }
+    },
+    {
+      "path": "examples/teleport.ent",
+      "include": true,
+      "bytes": 514,
+      "lines": 19,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 5,
+        "texLine": 349,
+        "caption": "examples/teleport.ent",
+        "section": "Teleportation: mid-circuit measurement and classical feedback",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "extracted/listing-03.ent",
+      "include": true,
+      "bytes": 236,
+      "lines": 9,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 6,
+        "texLine": 386,
+        "caption": "",
+        "section": "A staged circuit family: QFT",
+        "rule": "unnamed listing → unstructured fallback"
+      }
+    },
+    {
+      "path": "extracted/listing-04.ent",
+      "include": true,
+      "bytes": 125,
+      "lines": 5,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 7,
+        "texLine": 405,
+        "caption": "",
+        "section": "Generalised measurement",
+        "rule": "unnamed listing → unstructured fallback"
+      }
+    },
+    {
+      "path": "extracted/listing-05.ebnf",
+      "include": true,
+      "bytes": 1857,
+      "lines": 41,
+      "language": "ebnf",
+      "kind": "doc",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 8,
+        "texLine": 424,
+        "caption": "Ent concrete syntax (EBNF)",
+        "section": "Grammar",
+        "rule": "unnamed listing → unstructured fallback"
+      }
+    },
+    {
+      "path": "docs/notes/note-01.txt",
+      "include": true,
+      "bytes": 1400,
+      "lines": 34,
+      "language": "txt",
+      "kind": "doc",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 9,
+        "texLine": 534,
+        "caption": "Representative diagnostics",
+        "section": "Error catalogue",
+        "rule": "unnamed prose/diagnostic listing"
+      }
+    },
+    {
+      "path": "src/ent/errors.py",
+      "include": true,
+      "bytes": 1663,
+      "lines": 54,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D1"
+      ],
+      "origin": {
+        "listing": 11,
+        "texLine": 723,
+        "caption": "",
+        "section": "src/ent/errors.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/lexer.py",
+      "include": true,
+      "bytes": 2819,
+      "lines": 89,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D2"
+      ],
+      "origin": {
+        "listing": 12,
+        "texLine": 790,
+        "caption": "",
+        "section": "src/ent/lexer.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/ast.py",
+      "include": true,
+      "bytes": 3654,
+      "lines": 266,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 13,
+        "texLine": 885,
+        "caption": "",
+        "section": "src/ent/ast.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/parser.py",
+      "include": true,
+      "bytes": 16003,
+      "lines": 432,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "origin": {
+        "listing": 14,
+        "texLine": 1157,
+        "caption": "",
+        "section": "src/ent/parser.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/prelude.py",
+      "include": true,
+      "bytes": 3020,
+      "lines": 92,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D6"
+      ],
+      "origin": {
+        "listing": 15,
+        "texLine": 1595,
+        "caption": "",
+        "section": "src/ent/prelude.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/modules.py",
+      "include": true,
+      "bytes": 1911,
+      "lines": 54,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 16,
+        "texLine": 1693,
+        "caption": "",
+        "section": "src/ent/modules.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/elaborate.py",
+      "include": true,
+      "bytes": 46054,
+      "lines": 1090,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D30"
+      ],
+      "origin": {
+        "listing": 17,
+        "texLine": 1761,
+        "caption": "",
+        "section": "src/ent/elaborate.py — the heart",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/backends/simulator.py",
+      "include": true,
+      "bytes": 2453,
+      "lines": 69,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 18,
+        "texLine": 2881,
+        "caption": "",
+        "section": "src/ent/backends/simulator.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/backends/qasm.py",
+      "include": true,
+      "bytes": 7434,
+      "lines": 206,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D22",
+        "D23",
+        "D24"
+      ],
+      "origin": {
+        "listing": 19,
+        "texLine": 2956,
+        "caption": "",
+        "section": "src/ent/backends/qasm.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/cost.py",
+      "include": true,
+      "bytes": 2951,
+      "lines": 86,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D21"
+      ],
+      "origin": {
+        "listing": 20,
+        "texLine": 3179,
+        "caption": "",
+        "section": "src/ent/cost.py — the resource judgement of 18.2",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "src/ent/cli.py",
+      "include": true,
+      "bytes": 4139,
+      "lines": 127,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D25",
+        "D26"
+      ],
+      "origin": {
+        "listing": 21,
+        "texLine": 3280,
+        "caption": "",
+        "section": "src/ent/cli.py",
+        "rule": "enclosing section heading"
+      }
+    },
+    {
+      "path": "pyproject.toml",
+      "include": true,
+      "bytes": 327,
+      "lines": 14,
+      "language": "ini",
+      "kind": "doc",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 22,
+        "texLine": 3413,
+        "caption": "pyproject.toml additions",
+        "section": "Packaging",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "src/ent/__init__.py",
+      "include": true,
+      "bytes": 78,
+      "lines": 3,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 23,
+        "texLine": 3430,
+        "caption": "src/ent/__init__.py and src/ent/backends/__init__.py",
+        "section": "Packaging",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "src/ent/backends/__init__.py",
+      "include": true,
+      "bytes": 78,
+      "lines": 3,
+      "language": "python",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 23,
+        "texLine": 3430,
+        "caption": "src/ent/__init__.py and src/ent/backends/__init__.py",
+        "section": "Packaging",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "src/ent/std/qft.ent",
+      "include": true,
+      "bytes": 436,
+      "lines": 13,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [
+        "D28"
+      ],
+      "origin": {
+        "listing": 24,
+        "texLine": 3440,
+        "caption": "src/ent/std/qft.ent",
+        "section": "Standard library (written in Ent)",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "src/ent/std/grover.ent",
+      "include": true,
+      "bytes": 554,
+      "lines": 18,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 25,
+        "texLine": 3456,
+        "caption": "src/ent/std/grover.ent",
+        "section": "Standard library (written in Ent)",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "examples/ghz.ent",
+      "include": true,
+      "bytes": 119,
+      "lines": 6,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 26,
+        "texLine": 3489,
+        "caption": "examples/ghz.ent",
+        "section": "GHZ",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "docs/sessions/session-02.txt",
+      "include": true,
+      "bytes": 339,
+      "lines": 14,
+      "language": "txt",
+      "kind": "session",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 27,
+        "texLine": 3498,
+        "caption": "Sessions (illustrative)",
+        "section": "GHZ",
+        "rule": "unnamed shell session"
+      }
+    },
+    {
+      "path": "extracted/listing-06.qasm",
+      "include": true,
+      "bytes": 209,
+      "lines": 13,
+      "language": "qasm",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 28,
+        "texLine": 3515,
+        "caption": "",
+        "section": "GHZ",
+        "rule": "unnamed listing → unstructured fallback"
+      }
+    },
+    {
+      "path": "docs/sessions/session-03.txt",
+      "include": true,
+      "bytes": 232,
+      "lines": 7,
+      "language": "txt",
+      "kind": "session",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 29,
+        "texLine": 3541,
+        "caption": "",
+        "section": "Teleportation, verified",
+        "rule": "unnamed shell session"
+      }
+    },
+    {
+      "path": "examples/dj.ent",
+      "include": true,
+      "bytes": 439,
+      "lines": 17,
+      "language": "ent",
+      "kind": "code",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 30,
+        "texLine": 3553,
+        "caption": "examples/dj.ent",
+        "section": "Deutsch--Jozsa with a static oracle",
+        "rule": "caption"
+      }
+    },
+    {
+      "path": "docs/notes/note-02.txt",
+      "include": true,
+      "bytes": 91,
+      "lines": 2,
+      "language": "txt",
+      "kind": "doc",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 31,
+        "texLine": 3807,
+        "caption": "Document",
+        "section": "Building this document and the artefact",
+        "rule": "unnamed prose/diagnostic listing"
+      }
+    },
+    {
+      "path": "docs/notes/note-03.txt",
+      "include": true,
+      "bytes": 435,
+      "lines": 11,
+      "language": "txt",
+      "kind": "doc",
+      "stub": false,
+      "generated": false,
+      "modified": false,
+      "debugIds": [],
+      "origin": {
+        "listing": 32,
+        "texLine": 3812,
+        "caption": "Artefact",
+        "section": "Building this document and the artefact",
+        "rule": "unnamed prose/diagnostic listing"
+      }
+    },
+    {
+      "path": "src/ent/std/gates.ent",
+      "include": true,
+      "bytes": 94,
+      "lines": 2,
+      "language": "clike",
+      "kind": "stub",
+      "stub": true,
+      "generated": true,
+      "modified": false,
+      "debugIds": [],
+      "origin": null
+    },
+    {
+      "path": "tests/test_ent.py",
+      "include": true,
+      "bytes": 260,
+      "lines": 7,
+      "language": "python",
+      "kind": "stub",
+      "stub": true,
+      "generated": true,
+      "modified": false,
+      "debugIds": [],
+      "origin": null
+    },
+    {
+      "path": "src/enter/README.md",
+      "include": true,
+      "bytes": 277,
+      "lines": 8,
+      "language": "md",
+      "kind": "stub",
+      "stub": true,
+      "generated": true,
+      "modified": false,
+      "debugIds": [],
+      "origin": null
+    },
+    {
+      "path": "README.md",
+      "include": true,
+      "bytes": 2917,
+      "lines": 67,
+      "language": "md",
+      "kind": "doc",
+      "stub": false,
+      "generated": true,
+      "modified": false,
+      "debugIds": [],
+      "origin": null
+    },
+    {
+      "path": "DEPENDENCIES.md",
+      "include": true,
+      "bytes": 995,
+      "lines": 24,
+      "language": "md",
+      "kind": "doc",
+      "stub": false,
+      "generated": true,
+      "modified": false,
+      "debugIds": [],
+      "origin": null
+    }
+  ],
+  "messages": [
+    {
+      "level": "info",
+      "text": "Repository layout tree found in listing #10 (line 692): root “enter-calculus”, 24 entries."
+    },
+    {
+      "level": "warn",
+      "text": "Listing #23 declares 2 paths (src/ent/__init__.py, src/ent/backends/__init__.py); identical content written to each."
+    },
+    {
+      "level": "warn",
+      "text": "“src/ent/std/gates.ent” is declared in the layout tree but no listing supplies it → TODO stub created."
+    },
+    {
+      "level": "warn",
+      "text": "“tests/test_ent.py” is declared in the layout tree but no listing supplies it → TODO stub created."
+    },
+    {
+      "level": "warn",
+      "text": "Directory “src/enter/” has no supplied files → placeholder README added."
+    },
+    {
+      "level": "ok",
+      "text": "37 files reconstructed from 32 listings."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+$ entc run examples/ghz.ent --exact
+0000  0.500000
+1111  0.500000
+
+$ entc cost examples/ghz.ent
+qubits (peak)      : 4
+allocations        : 4
+gate applications  : 4
+measurements       : 1
+conditionals       : 0
+reduction leaves   : <= 16
+termination bound  : m(t) = ...   (Thm 3.5)
+
+$ entc emit examples/ghz.ent --target qasm3

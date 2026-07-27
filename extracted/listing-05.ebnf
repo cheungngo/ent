@@ -1,0 +1,41 @@
+program   ::= { item }
+item      ::= import | constdecl | fndecl | gatedecl | defgate
+import    ::= "import" path ";"
+constdecl ::= "const" ident [":" stype] "=" expr ";"
+fndecl    ::= "fn" ident [sparams] "(" [params] ")" ["->" type] block
+gatedecl  ::= "gate" ident [sparams] "(" [params] ")" block
+defgate   ::= "defgate" ident [sparams] "(" int ")" "=" expr ";"
+sparams   ::= "[" ident [":" stype] { "," ident [":" stype] } "]"
+params    ::= ident ":" type { "," ident ":" type }
+
+type      ::= "Unit" | "Bit" | "Qubit"
+            | type "-o" type
+            | "(" type { "," type } ")"
+            | type "[" expr "]"
+stype     ::= "int" | "float" | "bool" | "str" | stype "[" "]"
+
+block     ::= "{" { stmt } [ expr ] "}"
+stmt      ::= "let" pat [":" type] "=" expr ";"
+            | "const" ident "=" expr ";"
+            | gatestmt
+            | "if" expr block [ "else" (block | ifstmt) ]
+            | "for" ident "in" expr ".." expr block
+            | "discard" arglist ";" | "forget" arglist ";"
+            | "assert" expr [ "," str ] ";"
+            | "return" expr ";"
+            | expr ";"
+gatestmt  ::= { modifier } ident [ "[" args "]" ] arglist ";"
+modifier  ::= "adj" | "ctrl" | "ctrl" "(" expr ")"
+pat       ::= "_" | ident | "(" pat { "," pat } ")"
+
+expr      ::= "measure" expr [ "in" ident ]
+            | "qubit" "(" ")" | "qubits" "(" expr ")"
+            | "copy" expr
+            | "if" expr block "else" block
+            | "\" params "->" expr
+            | "[" [ expr { "," expr } ] "]"          // array literal (D4)
+            | expr binop expr | unop expr
+            | expr "(" [args] ")" | expr "[" expr "]"
+            | "(" [ expr { "," expr } ] ")" | literal | ident | block
+binop     ::= "||"|"&&"|"^"|"=="|"!="|"<"|">"|"<="|">="
+            | "<<"|">>"|"+"|"-"|"*"|"/"|"%"

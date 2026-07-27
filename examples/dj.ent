@@ -1,0 +1,17 @@
+const N = 3;
+
+// declared as a `gate`, hence usable under `adj` / `ctrl`
+gate oracle_balanced[n: int](qs: Qubit[n], y: Qubit) {
+    for i in 0..n { CX qs[i], y; }
+}
+
+fn main() -> Bit[N] {
+    let qs = qubits(N);
+    let y  = qubit();
+    X y; H y;
+    for i in 0..N { H qs[i]; }
+    oracle_balanced[N] qs, y;
+    for i in 0..N { H qs[i]; }
+    discard y;                      // measure-and-ignore, Thm 7.2
+    measure qs
+}
