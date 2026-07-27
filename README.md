@@ -2,11 +2,6 @@
 
 ## Language Specification, Reference Implementation, and Debug Log
 
-> Reconstructed automatically from **085XvA.tex** by
-> *TeX → Repo* on 2026-07-27T02:24:06.523Z.
-> The LaTeX document is the single source of truth; this repository is a
-> mechanical extraction of the code listings it embeds.
-
 ## Abstract
 
 Ent (source files .ent, compiler entc) is a surface language whose only semantics is ``desugar to a closed Enter-calculus term and reduce it''. Every theorem of the Enter calculus therefore applies to every Ent program for free, and the compiler literally re-checks its own output by handing the emitted core term back to enter.typing_rules.typecheck. This document specifies the surface syntax, the staged (compile-time / run-time) type discipline, the complete desugaring into the core calculus, the compiler architecture, and a reference implementation in Python that extends the existing enter-calculus artefact package. Section sec:guarantees states precisely which guarantees are inherited from which theorem, and which are not available. Appendix app:debug is a consolidated log of thirty corrections (D1--D30) applied to the first draft of the implementation; the listings in Section sec:impl are the corrected sources.
